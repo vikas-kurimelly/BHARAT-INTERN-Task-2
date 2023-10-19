@@ -1,0 +1,175 @@
+body {
+    background-image: url(flames.jpg);
+}
+
+img {
+    float: left;
+    height: 400px;
+    margin-left: 20%;
+    transform: rotate(13.5deg);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    color: #ff0000;
+    place-content: "Enter text";
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    color: #ff0000;
+}
+
+.text-boxes {
+    background: transparent;
+    text-align: center;
+}
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    height: 30px;
+    width: 35%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    color: #fff;
+    /*border-radius: 6px;*/
+    padding: 3px;
+    content: "Hello";
+}
+
+select {
+    font-family: 'Ubuntu', sans-serif;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 1px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    color: #fff;
+    /*border-radius: 6px;*/
+    padding: 5px;
+}
+
+select option {
+    background: #111;
+    color: #fff;
+
+}
+
+.container {
+    display: absolute;
+    box-sizing: border-box;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    height: 200%;
+    width: 80%;
+    border: 2px solid #ff8c00;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.3s all ease;
+    color: #fff;
+    cursor: default;
+    background: black;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 13px 13px #ff8c00;
+}
+
+.container .content {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    height: 40px;
+    width: 70px;
+    font-size: 16px;
+    border: 1px solid #ff0000;
+}
+
+button:hover {
+    background: #ff0000;
+    border: none;
+    transition: 0.3s all ease;
+    color: black;
+    cursor: pointer;
+}
+
+.answer,
+.answer b {
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+}
+
+.converter-boxes {
+    height: auto;
+    text-align: center;
+}
+span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff0000;
+    background: transparent;
+    margin: 12px;
+    margin-left: 30px;
+}
+
+@media (max-width: 987px) {
+    img {
+        float: left;
+        height: 400px;
+        margin-left: 14%;
+    }
+}
+
+
+@media (max-width: 755px) {
+    img {
+        float: left;
+        height: 300px;
+        margin-left: 14%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes example {
+    0% {
+        margin-left: -900px;
+    }
+
+    100% {
+        margin-left: 150px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 2;
+    }
+}
